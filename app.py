@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-with open('model.pkl', 'rb') as f:
+with open('models/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Label mapping (replace these with your actual crop names in correct order)
@@ -14,7 +14,7 @@ crop_labels = [
 ]
 
 # Streamlit app layout
-st.title("🌾 Crop Recommendation System")
+st.title("Crop Recommendation System")
 
 st.write("Enter the following details to predict the most suitable crop for cultivation:")
 
